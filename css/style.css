@@ -685,7 +685,13 @@ img {
     margin-right: 8px;
 }
 #about h3{
-    color: var(--c-dark);
+    color: var(--c-white);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+#about h2{
+    color: var(--c-white);
     font-size: 30px;
     font-weight: bold;
     text-align: left;
@@ -700,6 +706,12 @@ img {
 .team-member small {
     display: block;
     text-align: left;
+}
+#about .team-title {
+    font-size: 18px;
+}
+#about .team-member {
+    font-size: 14px;
 }
 #about h6 {
     color: var(--c-green);
