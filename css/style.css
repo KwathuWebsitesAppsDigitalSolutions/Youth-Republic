@@ -684,6 +684,42 @@ img {
     color: green;
     margin-right: 8px;
 }
+#about h3{
+    color: var(--c-dark);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+}
+#about h5{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: left;
+}
+.team-member small {
+    display: block;
+    text-align: left;
+}
+#about h6 {
+    color: var(--c-green);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#about .team-title {
+    text-decoration: none;
+}
+#about i {
+    color: var(--c-brand);
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+#about .para1 {
+    color: var(--c-body);
+    text-align: center;
+}
 .custom-card {
     transition: all 0.4s ease;
     background-color: #fff;
