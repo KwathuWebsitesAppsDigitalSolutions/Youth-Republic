@@ -756,14 +756,6 @@ img {
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-.custom-link {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-}
-.team-member{
-    margin-bottom: 80px;
-}
 /*---------------------------------------------------- SIGN UP ------------------------------------------------------*/
 #register {
     background:
@@ -780,7 +772,6 @@ img {
 #register h2 {
     color: #fff;
 }
-
 /*---------------------------------------------------- GALLERY ------------------------------------------------------*/
 .program-wrapper {
     height: 100%;
@@ -813,6 +804,58 @@ img {
     background-color: var(--c-brand);
     border: 1px solid #fff;
     padding: 8px 18px;
+}
+/*-------------------------------------------------- EVENT ---------------------------------------------------------*/
+.events .nav-pills .nav-link {
+    padding: 35px 30px !important;
+    margin-bottom: 10px;
+    color: var(--c-green);
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    border: 1px solid transparent;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    border-radius: 12px;
+}
+.events .nav-pills .nav-link:hover {
+    background-color: var(--c-green);
+    color: #fff;
+}
+.events .nav-pills .nav-link.active {
+    color: #fff;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+    background: var(--c-green);
+}
+.events .nav-pills .nav-link::after{
+    position: absolute;
+    top: 50%;
+    bottom: 10px;
+    right: -11px;
+    width: 0;
+    height: 0;
+    margin-top: -10px;
+    content: "";
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--c-green);
+    opacity: 0;
+}
+.events .nav-pills .nav-link.active::after {
+    opacity: 1;
+}
+.event-wrap {
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+    border-radius: 22px;
+    color: var(--c-body);
+    font-weight: 400;
 }
 /*-------------------------------------------------- TEAM ---------------------------------------------------------*/
 .team-member {
