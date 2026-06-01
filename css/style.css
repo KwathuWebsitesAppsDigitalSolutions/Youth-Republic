@@ -1141,9 +1141,9 @@ img {
 }
 
 #footer .footer-top .btn.btn-supportUs {
-    color: #0a7434;
-    background-color: white;
-    border: 3px solid var(--c-brand);
+    color: #0a7434 !important;
+    background-color: white !important;
+    border: 3px solid var(--c-brand) !important;
     border-radius: 20px;
     padding: 5px 30px;
 }
