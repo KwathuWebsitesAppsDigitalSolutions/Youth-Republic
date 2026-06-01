@@ -413,7 +413,6 @@
     <section id="register" class="section-padding">
         <div class="container">
             <div class="row align-items-center">
-
                 <div class="col-lg-8">
                      <h2 style="color: #fff;
                         font-size: 36px;
@@ -425,12 +424,51 @@
                         Follow our journey through inspiring projects, events, and meaningful youth impact stories.
                     </p>
                 </div>
-
                 <!-- Button -->
                 <div class="col-lg-4 text-lg-end text-start mt-3 mt-lg-0">
-                    <a href="#" class="btn btn-signup">Sign Up</a>
+                    <a href="#" 
+                        class="btn btn-signup"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Sign Up
+                    </a>
                 </div>
+                <!-- Sign Up Modal -->
+                <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
 
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="signupModalLabel">Stay Updated!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="signupForm">
+                                    <div class="mb-3">
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter your full name" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            name="email"
+                                            placeholder="Enter your email"
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                            title="Please enter a valid email address"
+                                            required>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success w-100">
+                                        Signup
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -10,3 +10,44 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let modalShown = false;
+    const aboutSection = document.getElementById("about");
+
+    window.addEventListener("scroll", function () {
+        if (modalShown || !aboutSection) return;
+
+        const rect = aboutSection.getBoundingClientRect();
+
+        // Trigger when user has scrolled past the About section
+        if (rect.bottom <= window.innerHeight) {
+            modalShown = true;
+
+            const signupModal = new bootstrap.Modal(
+                document.getElementById("signupModal")
+            );
+
+            signupModal.show();
+        }
+    });
+});
+
+document.getElementById("signupForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent page reload
+
+    alert("Signup was successful!");
+
+    // Optional: clear the form
+    this.reset();
+
+    // Optional: close the Bootstrap modal
+    const modal = bootstrap.Modal.getInstance(
+        document.getElementById("signupModal")
+    );
+    
+    if (modal) {
+        modal.hide();
+    }
+});
