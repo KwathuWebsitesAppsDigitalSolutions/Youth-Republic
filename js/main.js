@@ -35,19 +35,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById("signupForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Prevent page reload
+    e.preventDefault();
 
-    alert("Signup was successful!");
+    const toastEl = document.getElementById("signupToast");
+    const toast = new bootstrap.Toast(toastEl);
+    toast.show();
 
-    // Optional: clear the form
     this.reset();
 
-    // Optional: close the Bootstrap modal
     const modal = bootstrap.Modal.getInstance(
         document.getElementById("signupModal")
     );
-    
-    if (modal) {
-        modal.hide();
-    }
+
+    if (modal) modal.hide();
 });
