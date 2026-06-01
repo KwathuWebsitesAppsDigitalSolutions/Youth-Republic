@@ -37,8 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("signupForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    const toastEl = document.getElementById("signupToast");
-    const toast = new bootstrap.Toast(toastEl);
+    const toast = new bootstrap.Toast(
+        document.getElementById("signupToast")
+    );
     toast.show();
 
     this.reset();
